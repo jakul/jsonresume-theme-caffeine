@@ -16,8 +16,10 @@
     }
   }
 
-  .container {
-    page-break-inside: avoid;
+  .skills-container {
+    .item {
+      page-break-inside: avoid;
+    }
   }
 
   .work-container {

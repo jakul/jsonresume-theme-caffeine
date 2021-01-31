@@ -1,10 +1,7 @@
-{{#resume.basics}}
-<div class="container about-container">
-  {{> title value="About"}}
-
+<div class="profile-about">
   {{#if location}}
     {{#location}}
-    {{> info-tag text=(formatAddress address city region postalCode countryCode) icon="fa-map-marker"}}
+      {{> info-tag text=(formatAddress address city region postalCode countryCode) icon="fa-map-marker"}}
     {{/location}}
   {{/if}}
 
@@ -22,8 +19,9 @@
 
   {{#if profiles}}
     {{#each profiles}}
+      {{#is (lowercase network) "linkedin"}}
         {{> social}}
+      {{/is}}
     {{/each}}
   {{/if}}
-</section>
-{{/resume.basics}}
+</div>

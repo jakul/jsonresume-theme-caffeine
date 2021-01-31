@@ -10,14 +10,14 @@
   @include clearfix();
 }
 
-.left-column {
-  float: left;
+.aside-column {
+  float: right;
   width: $aside-width;
-  margin-right: $aside-margin;
+  margin-left: $aside-margin;
   word-wrap: break-word;
 }
 
-.right-column {
+.main-column {
   width: auto;
   overflow: hidden;
 }

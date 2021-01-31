@@ -1,22 +1,19 @@
 {{#if resume.skills.length}}
-  <div class="skills-container">
+  <div class="container skills-container">
+    {{> title value="Key Skills"}}
+
     {{#each resume.skills}}
-      <section class="container">
-        {{#if name}}
-          {{> title value=name}}
-        {{/if}}
-        {{#if level}}
-          <h4 class="bold">{{level}}</h4>
-        {{/if}}
-        {{#if keywords.length}}
-          <ul class="minimal">
+      <section class="item">
+        <h4>{{name}}</h4>
+        <ul class="minimal keywords">
+          {{#if keywords.length}}
             {{#each keywords}}
               <li>
-                <h6>{{.}}</h6>
+                {{.}}
               </li>
             {{/each}}
-          </ul>
-        {{/if}}
+          {{/if}}
+        </ul>
       </section>
     {{/each}}
   </div>

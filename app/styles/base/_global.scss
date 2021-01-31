@@ -20,6 +20,16 @@
   @include clearfix();
 }
 
+.profile-about {
+  margin-top: 10px;
+}
+
+.profile-header {
+  .name {
+    color: $primary-color;
+  }
+}
+
 .profile-pic {
   margin-top: -5px;
   margin-right: 18px;
