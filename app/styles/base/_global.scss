@@ -8,6 +8,16 @@
   border-top: 1px solid $primary-color;
 }
 
+.markdown {
+  p {
+    margin: spacing(1) 0;
+  }
+
+  ul {
+    margin: spacing(1) 0;
+  }
+}
+
 .pull-left {
   float: left;
 }
