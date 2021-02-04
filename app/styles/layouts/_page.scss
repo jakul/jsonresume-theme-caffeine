@@ -14,7 +14,16 @@
   float: right;
   width: $aside-width;
   margin-left: $aside-margin;
+  text-align: right;
   word-wrap: break-word;
+
+  .keyline {
+    float: right;
+  }
+
+  .title {
+    @include clearfix();
+  }
 }
 
 .main-column {
