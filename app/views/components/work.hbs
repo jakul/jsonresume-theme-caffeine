@@ -3,7 +3,7 @@
     {{> title value="Experience"}}
 
     {{#each resume.work}}
-      <section class="item">
+      <section class="item {{#if x-compact}}compact{{/if}}">
         {{> section-header name=this.company }}
 
         {{#if position}}
@@ -20,6 +20,15 @@
               <li>{{.}}</li>
             {{/each}}
           </ul>
+        {{/if}}
+
+        {{#if x-projects.length}}
+          {{#each x-projects}}
+            <div class="project markdown">
+              <h4> {{ name }}</h4>
+              {{marked summary}}
+            </div>
+          {{/each}}
         {{/if}}
       </section>
     {{/each}}

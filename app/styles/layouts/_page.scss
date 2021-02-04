@@ -34,6 +34,10 @@
 .item {
   margin-bottom: spacing(3);
 
+  &.compact {
+    margin-bottom: spacing(1);
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
