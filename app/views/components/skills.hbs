@@ -5,15 +5,11 @@
     {{#each resume.skills}}
       <section class="item">
         <h4>{{name}}</h4>
-        <ul class="minimal keywords">
-          {{#if keywords.length}}
-            {{#each keywords}}
-              <li>
-                {{.}}
-              </li>
-            {{/each}}
-          {{/if}}
-        </ul>
+        <div class="minimal keywords">
+          {{#each keywords}}
+            {{.}}{{#unless @last}},{{/unless}}
+          {{/each}}
+        </div>
       </section>
     {{/each}}
   </div>

@@ -14,11 +14,13 @@
   float: right;
   width: $aside-width;
   margin-left: $aside-margin;
-  text-align: right;
+  text-align: center;
   word-wrap: break-word;
 
   .keyline {
-    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
   }
 
   .title {

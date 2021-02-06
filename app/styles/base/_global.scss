@@ -18,6 +18,11 @@
   }
 }
 
+.minimal {
+  @include font-size(3);
+  text-align: justify;
+}
+
 .pull-left {
   float: left;
 }
