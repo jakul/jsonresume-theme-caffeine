@@ -40,7 +40,7 @@ handlebars.registerHelper({
   },
 
   formatDate: function (date) {
-    return moment(date).format('MM/YYYY');
+    return moment(date).format('MMM YYYY');
   },
 
   marked: function (value) {
