@@ -23,6 +23,10 @@
   }
 
   .work-container {
+    .item.compact {
+      page-break-inside: avoid;
+    }
+
     .project {
       page-break-inside: avoid;
     }
