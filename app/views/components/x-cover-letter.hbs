@@ -1,0 +1,12 @@
+{{#if resume.x-cover-letter.length}}
+<div class="container x-cover-letter-container">
+
+  {{#each resume.x-cover-letter}}
+    <section class="item">
+      {{> section-header name=this.title releaseDate=this.date }}
+
+      {{marked content}}
+    </section>
+  {{/each}}
+</div>
+{{/if}}
