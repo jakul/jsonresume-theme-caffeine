@@ -1,6 +1,8 @@
+// remove this @media before running the export
 @media print {
   body {
     margin: 0;
+    background: white;
   }
 
   .page {
@@ -30,6 +32,9 @@
     .project {
       page-break-inside: avoid;
     }
+  }
+  .references-container {
+    page-break-inside: avoid;
   }
 
   .fa-external-link {
