@@ -19,7 +19,7 @@ gulp.task('watch', function () {
     gulp.watch([
       'public/**/*',
       'resume.json',
-      'everwhen.json'
+      'everwhen-cover-letter.json'
     ]).on('change', browserSync.reload);
 
     gulp.watch('app/views/**/*.hbs', ['html']);

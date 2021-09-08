@@ -16,8 +16,9 @@
   "license": "MIT",
   "scripts": {
     "start": "npx gulp && npx resume serve --theme .",
-    "everwhen": "npx gulp && npx resume serve --theme . --resume everwhen.json",
-    "export": "npx gulp && npx resume export resume --format pdf --theme ."
+    "everwhen": "npx gulp && npx resume serve --theme . --resume everwhen-cover-letter.json",
+    "export": "npx gulp && npx resume export resume --format pdf --theme .",
+    "export:everwhen": "npx gulp && npx resume export --resume everwhen-cover-letter.json --format pdf --theme . everwhen-cover-letter.pdf"
   },
   "devDependencies": {
     "browser-sync": "^2.18.5",
@@ -57,7 +58,7 @@
     "handlebars-wax": "^6.1.0",
     "marked": "^1.2.9",
     "moment": "^2.17.1",
-    "resume-cli": "2.2.4",
+    "resume-cli": "^3.0.5",
     "swag": "^0.7.0"
   }
 }
