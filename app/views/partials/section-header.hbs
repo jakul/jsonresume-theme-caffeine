@@ -3,10 +3,10 @@
     <h3 class="bold pull-left">
       {{#if website}}
         <a href="{{website}}" target="_blank">
-          {{name}} <i class="fa fa-external-link" aria-hidden="true"></i>
+          {{name}}{{#if industry}} - {{industry}}{{/if}} <i class="fa fa-external-link" aria-hidden="true"></i>
         </a>
       {{else}}
-        {{name}}
+        {{name}}{{#if industry}} - {{industry}}{{/if}}
       {{/if}}
     </h3>
   {{/if}}
@@ -22,9 +22,5 @@
       {{formatDate releaseDate}}
     {{/if}}
 
-    <br>
-    {{#if industry}}
-        {{industry}}
-    {{/if}}
   </h5>
 </div>
