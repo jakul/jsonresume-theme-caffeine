@@ -23,6 +23,8 @@ body {
 }
 
 .work-container {
+  page-break-inside: avoid;
+
   .item.compact {
     page-break-inside: avoid;
   }
