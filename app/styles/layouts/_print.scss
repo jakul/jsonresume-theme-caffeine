@@ -1,43 +1,41 @@
-// remove this @media before running the export
-@media print {
-  body {
-    margin: 0;
-    background: white;
+body {
+  margin: 0;
+  background: white;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 36px 0 30px;
+  box-shadow: none;
+
+  .resume-header,
+  .resume-content {
+    padding: 0 22px 0 34px;
   }
+}
 
-  .page {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 36px 0 30px;
-    box-shadow: none;
-
-    .resume-header,
-    .resume-content {
-      padding: 0 22px 0 34px;
-    }
+.skills-container {
+  .item {
+    page-break-inside: auto;
   }
+}
 
-  .skills-container {
-    .item {
-      page-break-inside: avoid;
-    }
-  }
-
-  .work-container {
-    .item.compact {
-      page-break-inside: avoid;
-    }
-
-    .project {
-      page-break-inside: avoid;
-    }
-  }
-  .references-container {
+.work-container {
+  .item.compact {
     page-break-inside: avoid;
   }
 
-  .fa-external-link {
-    display: none;
+  .project {
+    page-break-inside: avoid;
   }
+}
+
+.references-container {
+  page-break-inside: avoid;
+}
+
+.fa-external-link {
+  display: none;
 }

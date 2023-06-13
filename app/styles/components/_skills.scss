@@ -1,0 +1,13 @@
+.skills-container {
+  .item .keywords {
+    padding: 0;
+
+    li:first-of-type {
+      padding: 0;
+    }
+
+    li {
+      display: inline;
+    }
+  }
+}
